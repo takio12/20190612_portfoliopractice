@@ -1,0 +1,170 @@
+.copy-container{
+    width: auto;
+    height: 1000px;
+    background-image:url('img/chapel-4245437_1280.jpg');
+    font-style: italic;
+    font-weight: 900;
+    color:#fff;
+    text-shadow: 0px 0px 2px #000, 2px 2px 3px #000;
+}
+.contents h3{
+    text-shadow: 1px 1px 10px #000;
+    background: rgb(224, 205, 221);
+}
+#myfirst{
+	float:left;
+	width:80%;
+}
+#mysecond{
+    text-align:right;
+}
+#mythird{
+   clear: both;
+}
+
+#mythird figure{
+    height: 240px;
+    width: 240px;
+    margin: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: all 1s ease-in-out;
+    background-repeat: no-repeat;
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+ }
+ #mythird a{
+    display: inline-block;
+    text-align: center;
+    margin: 40px;
+    text-decoration: none;
+    color: white;
+ }
+ #mythird a p{
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    top: 95%;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin: auto;
+ }
+ figure:hover p 
+ {
+    opacity: 1;
+  }
+  
+  figure:after 
+  {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 99;
+  }
+  
+  figure:hover:after 
+  {
+    opacity: 0.7;
+  }
+  
+  .photo01 {
+    background-image: url("img/forest-438432_640.jpg");
+  }
+  
+  .photo02 {
+    background-image: url("img/morning-1789903_640.jpg");
+  }
+  
+  .photo03 {
+    background-image: url("img/summerfield-336672_640.jpg");
+  }
+  .photo04 {
+    background-image: url("img/road-1072823_640.jpg");
+  }
+  
+  .photo05 {
+    background-image: url("img/chapel-4245437_1280.jpg");
+  }
+  
+  .photo06 {
+    background-image: url("img/woman-591576_640.jpg");
+  }
+   
+  /* lightbox */
+  
+  .sample-target {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 300;
+  }
+  
+  .sample-target .container {
+    margin: auto;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    background-color: rgb(70, 47, 47);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease-in-out;
+    text-align: left;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  
+  a.sample-close {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: rgb(80, 60, 60);
+    color: rgb(36, 6, 6);
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding-top: 10px;
+  }
+  
+  .sample-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .sample-target:target img {
+    height: auto;
+    vertical-align: top;
+  }
+  
+.pleft  {
+    margin-left: 10px; width:180px; height:120px;
+}
+ul {
+overflow:hidden;
+list-style:none;
+margin: 10 auto;
+background-color: #333;
+}
+ 
+ul li {
+  display: inline-block;
+  padding: 10px 10px;
+}
+ul li a{
+        text-decoration: none;
+        color:white;
+}
